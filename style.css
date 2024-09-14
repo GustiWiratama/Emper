@@ -77,11 +77,6 @@ body .nav-bar .nav-content .search .search-bar {
   border: none;
   border-radius: 20px;
 }
-body .nav-bar .nav-content .search .search-btn {
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-}
 body .content {
   font-family: Overpass;
   padding: 0;

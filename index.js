@@ -10,28 +10,16 @@ window.addEventListener("scroll", () => {
 //search
 // Anggap ini setelah fungsi fetch dan pengisian item
 
-const searchBtn = document.getElementById("search-btn");
 const searchBar = document.getElementById("search-bar");
-
-searchBtn.addEventListener("click", () => {
-  const query = searchBar.value.toLowerCase(); // Dapatkan input pencarian dan ubah ke huruf kecil
-
-  // Fetch daftar item lagi atau gunakan data yang sudah diambil
-  fetch("barang.json")
-    .then((response) => response.json())
-    .then((myItems) => {
-      const filteredItems = myItems.filter(
-        (item) => item.itemName.toLowerCase().includes(query) // Filter item berdasarkan query pencarian
-      );
-
-      displayItems(filteredItems); // Panggil fungsi tampilkan item dengan item yang sudah difilter
-    })
-    .catch((error) => console.error("Error loading JSON:", error));
-});
+const navMenu = document.getElementById("navMenu");
 // Opsional: Juga mendengarkan event input untuk menangani pencarian secara real-time
 searchBar.addEventListener("input", () => {
   const query = searchBar.value.toLowerCase();
-
+  if (menu.classList.contains("hidden")) {
+    navMenu.classList.remove("d-none");
+  } else {
+    navMenu.classList.add("d-none");
+  }
   // Ambil dan filter data yang sudah diambil sebelumnya
   fetch("barang.json")
     .then((response) => response.json())
