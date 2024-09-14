@@ -12,7 +12,7 @@ window.addEventListener("scroll", () => {
 
 const searchBar = document.getElementById("search-bar");
 const navMenu = document.getElementById("navMenu");
-// Opsional: Juga mendengarkan event input untuk menangani pencarian secara real-time
+//mendengarkan event input untuk menangani pencarian secara real-time
 searchBar.addEventListener("input", () => {
   const query = searchBar.value.toLowerCase();
   if (menu.classList.contains("hidden")) {
@@ -20,7 +20,6 @@ searchBar.addEventListener("input", () => {
   } else {
     navMenu.classList.add("d-none");
   }
-  // Ambil dan filter data yang sudah diambil sebelumnya
   fetch("barang.json")
     .then((response) => response.json())
     .then((myItems) => {
