@@ -1,0 +1,56 @@
+[
+  {
+    "image": "img/barang1.png",
+    "itemName": "Pemugbug",
+    "price": "2k/pcs",
+    "stock": "999"
+  },
+  {
+    "image": "img/barang1.png",
+    "itemName": "Ikut Gede",
+    "price": "2k/pcs",
+    "stock": "999"
+  },
+  {
+    "image": "img/barang1.png",
+    "itemName": "Ikut Cenik",
+    "price": "2k/pcs",
+    "stock": "999"
+  },
+  {
+    "image": "img/barang1.png",
+    "itemName": "Jenggot",
+    "price": "2k/pcs",
+    "stock": "999"
+  },
+  {
+    "image": "img/barang1.png",
+    "itemName": "Polos",
+    "price": "2k/pcs",
+    "stock": "999"
+  },
+  {
+    "image": "img/barang1.png",
+    "itemName": "Swastika",
+    "price": "2k/pcs",
+    "stock": "999"
+  },
+  {
+    "image": "img/barang1.png",
+    "itemName": "Pengapit",
+    "price": "2k/pcs",
+    "stock": "999"
+  },
+  {
+    "image": "img/barang1.png",
+    "itemName": "Genteng",
+    "price": "2k/pcs",
+    "stock": "999"
+  },
+  {
+    "image": "img/barang1.png",
+    "itemName": "Lepe",
+    "price": "2k/pcs",
+    "stock": "999"
+  }
+]

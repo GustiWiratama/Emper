@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="35x35" href="./img/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/3d02b209ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>EMPER | REBORN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <script src="./index.js" defer></script>
+    <div class="fContainer">
+      <div id="nav-bar" class="nav-bar">
+        <div class="title" id="title">
+          <img src="./img/logo.png" height="60px" width="60px" alt="" />
+          <div class="name"><strong>Emper</strong></div>
+        </div>
+        <div class="nav-content hidden" id="menu-list">
+          <div class="nav-menu">
+            <ul>
+              <li><a href="#item-content">Barang</a></li>
+              <li><a href="#dokumentasi">Dokumentasi</a></li>
+              <li><a href="#dokumentasi">Dokumentasi</a></li>
+            </ul>
+          </div>
+          <div class="search">
+            <input
+              id="search-bar"
+              class="search-bar"
+              type="text"
+              placeholder="Cari barang..."
+            />
+            <button class="search-btn" id="search-btn">Cari</button>
+          </div>
+        </div>
+        <div class="menu-btn" id="menu-btn">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+      </div>
+      <div class="content">
+        <div class="intro">
+          <h1 class="halo">Halo!</h1>
+          <p class="halo-desc">
+            Kami menyediakan genteng dan serian kualitas terbaik, dengan harga
+            yang apik
+          </p>
+        </div>
+        <div class="item-content" id="item-content">
+          <hr />
+          <h2 class="item-sec-title" id="barang">Barang</h2>
+          <div class="item-section">
+            <div class="card-items" id="itemList"></div>
+          </div>
+        </div>
+        <!-- carousel -->
+        <div class="img-slider">
+          <h2 id="dokumentasi">Dokumentasi</h2>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/cc.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/cc.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/cc.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- carousel end -->
+      </div>
+      <footer>
+        <div class="desk">
+          <h4>EMPER</h4>
+          <p>
+            Kami menyediakan genteng dan serian kualitas terbaik, dengan harga
+            yang apik Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Minima, iure!
+          </p>
+        </div>
+        <div class="social">
+          <p><i class="fa fa-whatsapp" aria-hidden="true"></i> 0824823847283</p>
+          <p>
+            <i class="fa fa-instagram" aria-hidden="true"></i> @aryasantika79
+          </p>
+          <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            aryasantika5@gmail.com
+          </p>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 EMPER. All rights reserved.</p>
+          <p>Copyright 2023</p>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
