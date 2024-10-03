@@ -1,42 +1,42 @@
 [
   {
-    "image": "img/barang1.png",
+    "image": "img/pemubug.jpg",
     "itemName": "Pemugbug",
     "price": "2k/pcs",
     "stock": "999"
   },
   {
-    "image": "img/barang1.png",
+    "image": "img/ikutgede.jpg",
     "itemName": "Ikut Gede",
     "price": "2k/pcs",
     "stock": "999"
   },
   {
-    "image": "img/barang1.png",
+    "image": "img/ikutcenik.jpg",
     "itemName": "Ikut Cenik",
     "price": "2k/pcs",
     "stock": "999"
   },
   {
-    "image": "img/barang1.png",
+    "image": "img/jenggot.jpg",
     "itemName": "Jenggot",
     "price": "2k/pcs",
     "stock": "999"
   },
   {
-    "image": "img/barang1.png",
+    "image": "img/polos.jpg",
     "itemName": "Polos",
     "price": "2k/pcs",
     "stock": "999"
   },
   {
-    "image": "img/barang1.png",
+    "image": "img/swastika.jpg",
     "itemName": "Swastika",
     "price": "2k/pcs",
     "stock": "999"
   },
   {
-    "image": "img/barang1.png",
+    "image": "img/pengapit.jpg",
     "itemName": "Pengapit",
     "price": "2k/pcs",
     "stock": "999"

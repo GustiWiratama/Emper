@@ -42,7 +42,7 @@
           <div class="nav-menu" id="navMenu">
             <ul>
               <li><a href="#item-content">Barang</a></li>
-              <li><a href="#dokumentasi">Dokumentasi</a></li>
+              <li><a href="#order">Pesan</a></li>
               <li><a href="#dokumentasi">Dokumentasi</a></li>
             </ul>
           </div>
@@ -74,6 +74,185 @@
             <div class="card-items" id="itemList"></div>
           </div>
         </div>
+        <div class="order-section" id="order">
+          <hr />
+          <h2 class="order-title">Pesan Barang</h2>
+          <div class="order-form">
+            <form
+              id="orderForm"
+              method="GET"
+              target="_blank"
+              onsubmit="return sendToWhatsApp();"
+            >
+              <div class="customer-identity">
+                <div class="form-group">
+                  <label for="name">Nama Pemesan</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Masukkan Nama"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="address">Alamat</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Masukkan Alamat"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">No HP</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Masukkan No HP"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="customer-order">
+                <h5>Pilih Barang</h5>
+                <div id="itemsContainer">
+                  <div class="item-group">
+                    <input
+                      type="checkbox"
+                      class="item-checkbox"
+                      onclick="toggleQuantityInput(this, 'item1Input')"
+                    />
+                    <label>Pemugbug</label>
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      class="form-control item-quantity"
+                      id="item1Input"
+                      placeholder="Jumlah"
+                      style="display: none"
+                      oninput="updateSummary()"
+                    />
+                  </div>
+                  <div class="item-group">
+                    <input
+                      type="checkbox"
+                      class="item-checkbox"
+                      onclick="toggleQuantityInput(this, 'item2Input')"
+                    />
+                    <label>Ikut Cenik</label>
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      class="form-control item-quantity"
+                      id="item2Input"
+                      placeholder="Jumlah"
+                      style="display: none"
+                      oninput="updateSummary()"
+                    />
+                  </div>
+                  <div class="item-group">
+                    <input
+                      type="checkbox"
+                      class="item-checkbox"
+                      onclick="toggleQuantityInput(this, 'item3Input')"
+                    />
+                    <label>Ikut Gede</label>
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      class="form-control item-quantity"
+                      id="item3Input"
+                      placeholder="Jumlah"
+                      style="display: none"
+                      oninput="updateSummary()"
+                    />
+                  </div>
+                  <div class="item-group">
+                    <input
+                      type="checkbox"
+                      class="item-checkbox"
+                      onclick="toggleQuantityInput(this, 'item4Input')"
+                    />
+                    <label>Jenggot</label>
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      class="form-control item-quantity"
+                      id="item4Input"
+                      placeholder="Jumlah"
+                      style="display: none"
+                      oninput="updateSummary()"
+                    />
+                  </div>
+                  <div class="item-group">
+                    <input
+                      type="checkbox"
+                      class="item-checkbox"
+                      onclick="toggleQuantityInput(this, 'item5Input')"
+                    />
+                    <label>Polos</label>
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      class="form-control item-quantity"
+                      id="item5Input"
+                      placeholder="Jumlah"
+                      style="display: none"
+                      oninput="updateSummary()"
+                    />
+                  </div>
+                  <div class="item-group">
+                    <input
+                      type="checkbox"
+                      class="item-checkbox"
+                      onclick="toggleQuantityInput(this, 'item6Input')"
+                    />
+                    <label>Pengapit</label>
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      class="form-control item-quantity"
+                      id="item6Input"
+                      placeholder="Jumlah"
+                      style="display: none"
+                      oninput="updateSummary()"
+                    />
+                  </div>
+                  <div class="item-group">
+                    <input
+                      type="checkbox"
+                      class="item-checkbox"
+                      onclick="toggleQuantityInput(this, 'item7Input')"
+                    />
+                    <label>Swastika</label>
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      class="form-control item-quantity"
+                      id="item7Input"
+                      placeholder="Jumlah"
+                      style="display: none"
+                      oninput="updateSummary()"
+                    />
+                  </div>
+                  <!-- Tambahkan lebih banyak barang sesuai kebutuhan -->
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Pesan</button>
+            </form>
+          </div>
+        </div>
+
         <!-- carousel -->
         <div class="img-slider">
           <h2 id="dokumentasi">Dokumentasi</h2>
@@ -162,9 +341,9 @@
         <div class="desk">
           <h4>EMPER</h4>
           <p>
-            Kami menyediakan genteng dan serian kualitas terbaik, dengan harga
-            yang apik Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Minima, iure!
+            <i class="fa fa-map-marker" aria-hidden="true"></i> UD. Wira&Milan
+            Pejaten, Br. Simpangan, Desa Pejaten, Kec. Kediri, Kab. Tabanan,
+            Bali 82112
           </p>
         </div>
         <div class="social">
